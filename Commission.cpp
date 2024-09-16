@@ -1,11 +1,12 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main(){
     double sales;
     double commission;
-    
+
     cout << "how much money have you made in sales?" << endl;
     cin >> sales;
 
@@ -17,7 +18,7 @@ int main(){
         commission = 0.1;
     }
     
-    cout << "your commission is: " << sales * commission;
+    cout << "your commission is: " << fixed << setprecision(2) << sales * commission;
 
     return 0;
 }
