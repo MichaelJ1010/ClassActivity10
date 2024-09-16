@@ -3,6 +3,17 @@
 using namespace std;
 
 int main(){
+    double sales;
+    double commission;
+    cout << "how much money have you made in sales?" << endl;
+    cin >> sales;
+    if(sales > 15'000){
+        commission = 0.2;
+    }else if (sales >= 10'000){
+        commission = 0.15;
+    }else{
+        commission = 0.1;
+    }
     
     return 0;
 }
